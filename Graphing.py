@@ -18,7 +18,7 @@ plt.ylabel("Absolute Error from Black-Scholes")
 plt.xlabel("Simulation Count")
 plt.xscale("log")
 
-plt.title("Monte Carlo Error with\n increasing Step Count",wrap=True)
+plt.title("Monte Carlo Error with\n increasing Simulation Count",wrap=True)
 
 
 xpointsb = steps
