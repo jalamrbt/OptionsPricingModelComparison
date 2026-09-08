@@ -23,6 +23,7 @@ def testBinomial():
 
     return errors
 
+
 def testMonteCarlo():
     mcResults=[]
     for i in simulationCounts:
