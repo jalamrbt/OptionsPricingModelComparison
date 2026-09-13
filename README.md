@@ -15,7 +15,12 @@ Each method was implemented independently in Python and tested against some fixe
 To evaluate the convergence, both Binomial and Monte Carlo were run with step counts from 5 to 500 for the tree, and simulation counts from 100 to 100,000 for Monte Carlo (I also averaged each simulation over 10 runs to reduce noise from random generation). 
 I plotted the absolute-error against the Black-Scholes price on a log-scaled x-axis to visualise the convergence behaviour, as shown below.
 
-I found that the Binomial Tree converged to within 0.04% of the Black-Scholes price at 500 steps, while Monte Carlo reached only 0.4% error at 100,000 simulations - indicating binomial converges much faster and cheaper than Monte Carlo and is therefore the better choice for this type of option.
+I found that the Binomial Tree converged to within 0.04% of the Black-Scholes price at 500 steps, while Monte Carlo reached  0.4% error at 100,000 simulations - indicating binomial converges much faster and cheaper than Monte Carlo and is therefore the better choice for this type of option.
+
+To further test this, I re-ran Monte Carlo at higher simulation counts (1,000,000) and found it still had 0.18% error ~ around 5x less accurate than the Binomial Tree despite 2000x the computational cost. This further confirmed that the Binomial Tree is significantly more efficient for this type of option.
+
 <p align="center">
-    <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/208fad36-4944-4672-9223-815840d2bd24" />
+<img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/3357cc10-f1cf-4905-9838-f2c704885c40" />
+
+
 
