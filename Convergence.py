@@ -4,7 +4,7 @@ import MonteCarlo as mc
 
 
 timeToExpiry =1
-riskFreeRate = 0.005
+riskFreeRate = 0.05
 volatility = 0.2
 spot =100
 strike = 100
