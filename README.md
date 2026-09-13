@@ -18,4 +18,4 @@ I plotted the absolute-error against the Black-Scholes price on a log-scaled x-a
 I found that the Binomial Tree converged to within 0.04% of the Black-Scholes price at 500 steps, while Monte Carlo reached only 0.4% error at 100,000 simulations - indicating binomial converges much faster and cheaper than Monte Carlo and is therefore the better choice for this type of option.
 <p align="center">
     <img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/208fad36-4944-4672-9223-815840d2bd24" />
-<\p>
+
